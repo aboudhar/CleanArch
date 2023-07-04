@@ -6,7 +6,7 @@ using MediatR;
 
 namespace BLCLicenseManagement.Application.Features.LicenseType.Queries.GetAllLicenseTypes
 {
-    internal class GetLicenseTypeQueryHandler : IRequestHandler<GetLicenseTypeQuery, List<LicenseTypeDto>>
+    public class GetLicenseTypeQueryHandler : IRequestHandler<GetLicenseTypeQuery, List<LicenseTypeDto>>
     {
         //constructor
         private readonly IMapper _mapper;

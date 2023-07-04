@@ -1,3 +1,4 @@
+using BLCLicenseManagement.API.Middleware;
 using BLCLicenseManagement.Application;
 using BLCLicenseManagement.Infrastructure;
 using BLCLicenseManagement.Persistence;
@@ -34,6 +35,8 @@ namespace BLCLicenseManagement.API
 
             var app = builder.Build();
 
+            app.UseMiddleware<ExceptionMiddleware>();
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -42,6 +45,7 @@ namespace BLCLicenseManagement.API
             }
 
             app.UseHttpsRedirection();
+            app.UseCors("all");
 
             app.UseAuthorization();
 

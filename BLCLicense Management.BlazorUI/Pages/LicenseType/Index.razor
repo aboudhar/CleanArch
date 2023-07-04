@@ -1,0 +1,62 @@
+﻿@page "/Licensetypes/"
+
+<h3>Leave Types</h3>
+
+<div class="m-2 d-flex justify-content-end">
+    <button @onclick="CreateLicenseType" class="btn btn-success">Add License Type</button>
+</div>
+
+@if (string.IsNullOrEmpty(Message) == false)
+{
+    <div class="alert alert-danger">
+        @Message
+    </div>
+}
+
+<div clas></div>
+@if (LicenseTypes == null)
+{
+    <p>Loading Data...</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+@*                <th>
+                    Default Days
+                </th>*@
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Licensetype in LicenseTypes)
+            {
+                <tr>
+                    <td>@Licensetype.Id </td>
+                    <td>@Licensetype.Name </td>
+                    <td>
+                        @*<AuthorizeView Roles="Administrator">*@
+@*                            <button @onclick=@(() => AllocateLicensetype(leaveType.Id))
+                                    class="btn btn-dark">
+                                Allocate Leave
+                            </button>*@
+                        <button @onclick="@(() => EditLicenseType(Licensetype.Id))" class="btn btn-warning">Edit</button>
+                        <button @onclick="@(() => DeleteLicenseType(Licensetype.Id))" class="btn btn-danger">Delete</button>
+                        @*</AuthorizeView>*@
+                        <button @onclick="@(() => DetailsLicenseType(Licensetype.Id))" class="btn btn-info">Details</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+
+

@@ -21,7 +21,6 @@ namespace BLCLicenseManagement.API.Controllers
             _mediator = mediator;
         }
 
-
         // GET: api/<UsersController>
         [HttpGet]
         public async Task<List<UserDto>> Get()

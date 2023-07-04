@@ -1,4 +1,5 @@
-﻿using BLCLicenseManagement.Application.Features.BLCLicense.Queries;
+﻿
+using BLCLicenseManagement.Application.Features.BLCLicense.Queries;
 
 namespace BLCLicenseManagement.Application.Features.InstanceOfLicenses.Queries
 {
@@ -8,6 +9,7 @@ namespace BLCLicenseManagement.Application.Features.InstanceOfLicenses.Queries
         public string Name { get; set; } = string.Empty;
         public string Key { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public LicenseDtoQuery License { get; set; } = new LicenseDtoQuery();
+        public int LicenseId { get; set; }
+        public LicenseDtoQuery License { get; set; }
     }
 }
