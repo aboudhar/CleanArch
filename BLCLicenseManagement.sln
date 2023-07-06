@@ -25,11 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLCLicenseManagement.Infras
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLCLicenseManagement.API", "BLCLicenseManagement.API\BLCLicenseManagement.API.csproj", "{540CF65E-DC09-4DCE-913C-C5C6E8AC09D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLCLicense Management.Application.UnitTests", "BLCLicense Management.Application.UnitTests\BLCLicense Management.Application.UnitTests.csproj", "{71118D42-FAF1-4EAF-B380-A94FB8CA33B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLCLicense Management.Application.UnitTests", "BLCLicense Management.Application.UnitTests\BLCLicense Management.Application.UnitTests.csproj", "{71118D42-FAF1-4EAF-B380-A94FB8CA33B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLCLicenseManagement.Persistence.IntegrationTests", "BLCLicenseManagement.Persistence.IntegrationTests\BLCLicenseManagement.Persistence.IntegrationTests.csproj", "{483FAC3B-FC06-4551-9E66-9A34EF143C9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLCLicenseManagement.Persistence.IntegrationTests", "BLCLicenseManagement.Persistence.IntegrationTests\BLCLicenseManagement.Persistence.IntegrationTests.csproj", "{483FAC3B-FC06-4551-9E66-9A34EF143C9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLCLicense Management.BlazorUI", "BLCLicense Management.BlazorUI\BLCLicense Management.BlazorUI.csproj", "{91737A53-8884-4B00-84D9-3F52DA33C33C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLCLicense Management.BlazorUI", "BLCLicense Management.BlazorUI\BLCLicense Management.BlazorUI.csproj", "{91737A53-8884-4B00-84D9-3F52DA33C33C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLCLicenseManagement.Identity", "BLCLicenseManagement.Identity\BLCLicenseManagement.Identity.csproj", "{926B749A-0F22-4A69-A7FA-8C6EB11F3B19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{91737A53-8884-4B00-84D9-3F52DA33C33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91737A53-8884-4B00-84D9-3F52DA33C33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91737A53-8884-4B00-84D9-3F52DA33C33C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{926B749A-0F22-4A69-A7FA-8C6EB11F3B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{926B749A-0F22-4A69-A7FA-8C6EB11F3B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{926B749A-0F22-4A69-A7FA-8C6EB11F3B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{926B749A-0F22-4A69-A7FA-8C6EB11F3B19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{71118D42-FAF1-4EAF-B380-A94FB8CA33B9} = {799DCC91-9365-49FB-9617-F04D85AE9348}
 		{483FAC3B-FC06-4551-9E66-9A34EF143C9E} = {799DCC91-9365-49FB-9617-F04D85AE9348}
 		{91737A53-8884-4B00-84D9-3F52DA33C33C} = {1B88FC31-B119-43BA-A8C1-D1A0F025F6B7}
+		{926B749A-0F22-4A69-A7FA-8C6EB11F3B19} = {8D360A12-9458-4432-9AAB-FE09F3FFEB51}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B24F14B7-6561-491F-A3D1-51960FC7FDF1}

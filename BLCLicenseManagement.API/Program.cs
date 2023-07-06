@@ -17,6 +17,7 @@ namespace BLCLicenseManagement.API
             builder.Services.AddApplicationServices();
             builder.Services.RegisterInfrastructureServices(builder.Configuration);
             builder.Services.AddInfrastructureServices(builder.Configuration);
+            builder.Services.AddInfrastructureServices(builder.Configuration);
 
             builder.Services.AddControllers();
 
@@ -47,6 +48,7 @@ namespace BLCLicenseManagement.API
             app.UseHttpsRedirection();
             app.UseCors("all");
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
